@@ -122,20 +122,20 @@ Tento príkaz odstráni index `idx_meno`.
 **12. 🔑 GRANT** – Pridelenie prístupových práv.
 
 ```sql
-GRANT SELECT ON studenti TO uzivatel;
+GRANT SELECT ON studenti TO pouzivatel;
 ```
 
-Tento príkaz pridelí práva na čítanie tabuľky `studenti` používateľovi `uzivatel`.
+Tento príkaz pridelí práva na čítanie tabuľky `studenti` používateľovi `pouzivatel`.
 
 ---
 
 **13. 🔒 REVOKE** – Odobratie prístupových práv.
 
 ```sql
-REVOKE SELECT ON studenti FROM uzivatel;
+REVOKE SELECT ON studenti FROM pouzivatel;
 ```
 
-Tento príkaz odoberie práva na čítanie tabuľky `studenti` používateľovi `uzivatel`.
+Tento príkaz odoberie práva na čítanie tabuľky `studenti` používateľovi `pouzivatel`.
 
 ---
 
@@ -172,20 +172,20 @@ Tento príkaz zruší všetky zmeny vykonané v aktuálnej transakcii.
 **17. 👤 CREATE USER** – Vytvorenie nového používateľa.
 
 ```sql
-CREATE USER novy_uzivatel WITH PASSWORD 'heslo';
+CREATE USER novy_pouzivatel WITH PASSWORD 'heslo';
 ```
 
-Tento príkaz vytvorí nového používateľa `novy_uzivatel` s heslom `heslo`.
+Tento príkaz vytvorí nového používateľa `novy_pouzivatel` s heslom `heslo`.
 
 ---
 
 **18. 🗑️ DROP USER** – Odstránenie používateľa.
 
 ```sql
-DROP USER novy_uzivatel;
+DROP USER novy_pouzivatel;
 ```
 
-Tento príkaz odstráni používateľa `novy_uzivatel`.
+Tento príkaz odstráni používateľa `novy_pouzivatel`.
 
 ---
 
