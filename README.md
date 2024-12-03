@@ -1,9 +1,9 @@
-# 😺 Online kurz Git a Github
-Materiály k online kurzu Git a GitHub
+# 😺 Online kurz PostgreSQL
+Materiály k online kurzu PostgreSQL
 
 
-## Zoznam základných Bash príkazov s vysvetleniami
-Tu je zoznam základných Bash príkazov s konkrétnymi vysvetleniami:
+## Zoznam základných PostgreSQL príkazov s vysvetleniami
+Tu je zoznam základných PostgreSQL príkazov s konkrétnymi vysvetleniami:
 
 **1. 📂 ls** – Zobrazí zoznam súborov a priečinkov v aktuálnom adresári.
  
