@@ -20,7 +20,7 @@ Materiály k online kurzu PostgreSQL
 Detailnejšie vysvetlenie:
 1. **\l** – Tento príkaz vypíše všetky dostupné databázy v rámci inštancie PostgreSQL.  
 1. **\c [databáza]** – Umožňuje prepnúť sa do inej databázy, ktorú chcete spravovať.  
-1. **\dt **– Zobrazí všetky tabuľky v aktuálnej schéme (public schéma, ak nie je špecifikované inak).  
+1. **\dt** – Zobrazí všetky tabuľky v aktuálnej schéme (public schéma, ak nie je špecifikované inak).  
 1. **\d [tabuľka]** – Poskytne detailné informácie o štruktúre tabuľky, ako sú stĺpce, dátové typy, indexy, a ďalšie.  
 1. **\dn** – Umožňuje získať prehľad o všetkých schémach dostupných v databáze.  
 1. **\di** – Zobrazuje existujúce indexy, čo je užitočné pri optimalizácii výkonu databázy.  
