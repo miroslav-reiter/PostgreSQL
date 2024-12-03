@@ -4,32 +4,32 @@ Materiály k online kurzu PostgreSQL
 ## Zoznam Metapríkazov PostgreSQL s vysvetleniami
 | N  |   Metapríkaz  |                                    Popis                                   |
 |----|:-------------:|:--------------------------------------------------------------------------:|
-| 1  | \l            | Zobrazenie zoznamu všetkých databáz.                                       |
-| 2  | \c [databáza] | Prepnutie na inú databázu.                                                 |
-| 3  | \dt           | Zobrazenie zoznamu všetkých tabuliek v aktuálnej schéme.                   |
-| 4  | \d [tabuľka]  | Zobrazenie štruktúry konkrétnej tabuľky (stĺpce, typy, indexy).            |
-| 5  | \dn           | Zobrazenie zoznamu schém v aktuálnej databáze.                             |
-| 6  | \di           | Zobrazenie zoznamu indexov v aktuálnej schéme.                             |
-| 7  | \dv           | Zobrazenie zoznamu pohľadov (views) v aktuálnej schéme.                    |
-| 8  | \du           | Zobrazenie zoznamu užívateľov a ich rolí.                                  |
-| 9  | \df           | Zobrazenie zoznamu funkcií definovaných v databáze.                        |
-| 10 | \pset         | Nastavenie formátovania výstupu (napr. \pset border 2 pridá orámovanie).   |
-| 11 | \q            | Ukončenie relácie psql (vystúpenie z PostgreSQL interaktívneho terminálu). |
-| 12 | \timing       | Zapnutie alebo vypnutie zobrazovania času vykonávania SQL príkazov.        |
+| 1  | **\l**            | Zobrazenie zoznamu všetkých databáz.                                       |
+| 2  | **\c [databáza]** | Prepnutie na inú databázu.                                                 |
+| 3  | **\dt**          | Zobrazenie zoznamu všetkých tabuliek v aktuálnej schéme.                   |
+| 4  | **\d [tabuľka]** | Zobrazenie štruktúry konkrétnej tabuľky (stĺpce, typy, indexy).            |
+| 5  |**\dn**          | Zobrazenie zoznamu schém v aktuálnej databáze.                             |
+| 6  | **\di**          | Zobrazenie zoznamu indexov v aktuálnej schéme.                             |
+| 7  |**\dv**          | Zobrazenie zoznamu pohľadov (views) v aktuálnej schéme.                    |
+| 8  | **\du**          | Zobrazenie zoznamu užívateľov a ich rolí.                                  |
+| 9  | **\df**          | Zobrazenie zoznamu funkcií definovaných v databáze.                        |
+| 10 | **\pset**        | Nastavenie formátovania výstupu (napr. \pset border 2 pridá orámovanie).   |
+| 11 | **\q**            | Ukončenie relácie psql (vystúpenie z PostgreSQL interaktívneho terminálu). |
+| 12 | **\timing**       | Zapnutie alebo vypnutie zobrazovania času vykonávania SQL príkazov.        |
 
 Detailnejšie vysvetlenie:
-1. \l – Tento príkaz vypíše všetky dostupné databázy v rámci inštancie PostgreSQL.  
-1. \c [databáza] – Umožňuje prepnúť sa do inej databázy, ktorú chcete spravovať.  
-1. \dt – Zobrazí všetky tabuľky v aktuálnej schéme (public schéma, ak nie je špecifikované inak).  
-1. \d [tabuľka] – Poskytne detailné informácie o štruktúre tabuľky, ako sú stĺpce, dátové typy, indexy, a ďalšie.  
-1. \dn – Umožňuje získať prehľad o všetkých schémach dostupných v databáze.  
-1. \di – Zobrazuje existujúce indexy, čo je užitočné pri optimalizácii výkonu databázy.  
-1. \dv – Pomocou tohto príkazu získate zoznam definovaných pohľadov (views).  
-1. \du – Tento príkaz zobrazuje všetkých používateľov a ich priradené role.  
-1. \df – Slúži na zoznam všetkých funkcií uložených v databáze, či už systémových alebo používateľských.  
-1. \pset – Upravuje, ako sa údaje zobrazujú, napr. pridanie orámovania tabuliek.  
-1. \q – Rýchle ukončenie relácie psql.  
-1. \timing – Aktivuje zobrazovanie času, ktorý PostgreSQL potrebuje na vykonanie príkazov.  
+1. **\l** – Tento príkaz vypíše všetky dostupné databázy v rámci inštancie PostgreSQL.  
+1. **\c [databáza]** – Umožňuje prepnúť sa do inej databázy, ktorú chcete spravovať.  
+1. **\dt **– Zobrazí všetky tabuľky v aktuálnej schéme (public schéma, ak nie je špecifikované inak).  
+1. **\d [tabuľka]** – Poskytne detailné informácie o štruktúre tabuľky, ako sú stĺpce, dátové typy, indexy, a ďalšie.  
+1. **\dn** – Umožňuje získať prehľad o všetkých schémach dostupných v databáze.  
+1. **\di** – Zobrazuje existujúce indexy, čo je užitočné pri optimalizácii výkonu databázy.  
+1. **\dv** – Pomocou tohto príkazu získate zoznam definovaných pohľadov (views).  
+1. **\du** – Tento príkaz zobrazuje všetkých používateľov a ich priradené role.  
+1. **\df** – Slúži na zoznam všetkých funkcií uložených v databáze, či už systémových alebo používateľských.  
+1. **\pset** – Upravuje, ako sa údaje zobrazujú, napr. pridanie orámovania tabuliek.  
+1. **\q** – Rýchle ukončenie relácie psql.  
+1. **\timing** – Aktivuje zobrazovanie času, ktorý PostgreSQL potrebuje na vykonanie príkazov.  
 
 Tieto metapríkazy sú ideálne na navigáciu a rýchle vykonávanie často potrebných akcií v PostgreSQL!  
 
