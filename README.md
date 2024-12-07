@@ -260,17 +260,17 @@ NOTIFY novinky, 'Nový študent bol pridaný!';
 Tento príkaz odošle notifikáciu s názvom `novinky` a správou `'Nový študent bol pridaný!'`.
 
 ## Linux PgAdmin
-**1. Importujte GPG kľúč pre úložisko:**
-curl -fsSL https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo tee /etc/apt/trusted.gpg.d/pgadmin.asc
-curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add -
+**1. Importujte GPG kľúč pre úložisko:**  
+curl -fsSL https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo tee /etc/apt/trusted.gpg.d/pgadmin.asc  
+curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add -  
 
-**2. Pridajte úložisko do vášho systému:**
-echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" | sudo tee /etc/apt/sources.list.d/pgadmin4.list && sudo apt update
+**2. Pridajte úložisko do vášho systému:** 
+echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" | sudo tee /etc/apt/sources.list.d/pgadmin4.list && sudo apt update  
 
-**3. Nainštalujte pgAdmin**
-sudo apt install pgadmin4-desktop
-sudo snap install pgadmin4
-pgadmin4
+**3. Nainštalujte pgAdmin**  
+sudo apt install pgadmin4-desktop  
+sudo snap install pgadmin4  
+pgadmin4  
 sudo apt install pgadmin4-web
 http://127.0.0.1/pgadmin4
 
