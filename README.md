@@ -1,13 +1,13 @@
 # 🐘 Online kurz PostgreSQL
 Materiály k online kurzu PostgreSQL
 
-## A1 [Zoznam Metapríkazov PostgreSQL s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-meta-prikazov)
-## A2 [Zoznam základných PostgreSQL príkazov s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-zakladnych-prikazov-postgresql)
-## A3 [Zoznam PostgreSQL DBA príkazov - Používatelia a Práva s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-prikazov-dba-pouzivatelia)
-## A4 [Inštalácia Linux pgAdmin](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#instalacia-linux-pgadmin)
+### A1 [🤖 Zoznam Metapríkazov PostgreSQL s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-meta-prikazov)
+### A2 [🛠️ Zoznam základných PostgreSQL príkazov s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-zakladnych-prikazov-postgresql)
+### A3 [👮 Zoznam PostgreSQL DBA príkazov - Používatelia a Práva s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-prikazov-dba-pouzivatelia)
+### A4 [🐧 Inštalácia Linux pgAdmin](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#instalacia-linux-pgadmin)
 
-<a name="zoznam-meta-prikazov></a>
-## Zoznam Metapríkazov PostgreSQL s vysvetleniami
+<a name="zoznam-meta-prikazov"></a>  
+## 🤖 Zoznam Metapríkazov PostgreSQL s vysvetleniami
 | N  |   Metapríkaz  |                                    Popis                                   |
 |----|:-------------:|:--------------------------------------------------------------------------:|
 | 1  | **\l**            | Zobrazenie zoznamu všetkých databáz.                                       |
@@ -39,8 +39,8 @@ Detailnejšie vysvetlenie:
 
 Tieto metapríkazy sú ideálne na navigáciu a rýchle vykonávanie často potrebných akcií v PostgreSQL!  
 
-<a name="zoznam-zakladnych-prikazov-postgresql></a>
-## Zoznam základných PostgreSQL príkazov s vysvetleniami
+<a name="zoznam-zakladnych-prikazov-postgresql"></a>
+## 🛠️ Zoznam základných PostgreSQL príkazov s vysvetleniami
 
 Tu je zoznam základných PostgreSQL príkazov s konkrétnymi vysvetleniami:
 
@@ -267,7 +267,7 @@ NOTIFY novinky, 'Nový študent bol pridaný!';
 Tento príkaz odošle notifikáciu s názvom `novinky` a správou `'Nový študent bol pridaný!'`.
 
 <a name="zoznam-prikazov-dba-pouzivatelia></a>
-## Zoznam PostgreSQL DBA príkazov - Používatelia a Práva s vysvetleniami
+## 👮 Zoznam PostgreSQL DBA príkazov - Používatelia a Práva s vysvetleniami
 **1. ✨ CREATE USER** – Vytvorenie nového používateľa.
 
 ```sql
@@ -337,8 +337,8 @@ DROP USER novy_pouzivatel;
 
 Tento príkaz odstráni používateľa `novy_pouzivatel`. Predtým musia byť odstránené všetky jeho závislosti.
 
-<a name="instalacia-linux-pgadmin></a>
-## Inštalácia Linux pgAdmin
+<a name="instalacia-linux-pgadmin"></a>
+## 🐧 Inštalácia Linux pgAdmin
 **1. Importujte GPG kľúč pre úložisko:**  
 curl -fsSL https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo tee /etc/apt/trusted.gpg.d/pgadmin.asc  
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add -  
