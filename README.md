@@ -1,5 +1,5 @@
-# 🐘 Online kurz PostgreSQL
-Materiály k online kurzu PostgreSQL
+# 🐘 Online kurzy PostgreSQL
+Materiály k online kurzom PostgreSQL
 
 ### A1 [🤖 Zoznam Metapríkazov PostgreSQL s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-meta-prikazov)
 ### A2 [🛠️ Zoznam základných PostgreSQL príkazov s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-zakladnych-prikazov-postgresql)
