@@ -4,7 +4,7 @@ Materiály k online kurzu PostgreSQL
 ## A1 [Zoznam Metapríkazov PostgreSQL s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-meta-prikazov)
 ## A2 [Zoznam základných PostgreSQL príkazov s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-zakladnych-prikazov-postgresql)
 ## A3 [Zoznam PostgreSQL DBA príkazov - Používatelia a Práva s vysvetleniami](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-prikazov-dba-pouzivatelia)
-## A4 [Inštalácia Linux pgAdmin](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#instalacia-linux-pgadmi)
+## A4 [Inštalácia Linux pgAdmin](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#instalacia-linux-pgadmin)
 
 <a name="zoznam-meta-prikazov></a>
 ## Zoznam Metapríkazov PostgreSQL s vysvetleniami
