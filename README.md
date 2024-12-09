@@ -259,6 +259,76 @@ NOTIFY novinky, 'Nový študent bol pridaný!';
 
 Tento príkaz odošle notifikáciu s názvom `novinky` a správou `'Nový študent bol pridaný!'`.
 
+## Zoznam PostgreSQL DBA príkazov - Používatelia a Práva s vysvetleniami
+**1. ✨ CREATE USER** – Vytvorenie nového používateľa.
+
+```sql
+CREATE USER novy_pouzivatel WITH PASSWORD 'silneheslo';
+```
+
+Tento príkaz vytvorí nového používateľa s menom `novy_pouzivatel` a heslom `silneheslo`.
+
+---
+
+**2. 🔓 GRANT CONNECT ON DATABASE** – Priradenie prístupu na databázu.
+
+```sql
+GRANT CONNECT ON DATABASE mojadb TO novy_pouzivatel;
+```
+
+Tento príkaz umožní používateľovi `novy_pouzivatel` pripojenie k databáze `mojadb`.
+
+---
+
+**3. 🛡️ CREATE ROLE** – Vytvorenie roly s právami.
+
+```sql
+CREATE ROLE junior;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO junior;
+```
+
+Tento príkaz vytvorí rolu `junior`, ktorá má právo čítať všetky tabuľky v schéme `public`.
+
+---
+
+**4. 🛡️ GRANT ROLE** – Priradenie roly používateľovi.
+
+```sql
+GRANT junior TO novy_pouzivatel;
+```
+
+Tento príkaz priradí rolu `junior` používateľovi `novy_pouzivatel`.
+
+---
+
+**5. 🚫 REVOKE PRIVILEGES** – Obmedzenie prístupových práv.
+
+```sql
+REVOKE INSERT ON TABLE zamestnanci FROM novy_pouzivatel;
+```
+
+Tento príkaz zruší právo vkladať údaje do tabuľky `zamestnanci` pre používateľa `novy_pouzivatel`.
+
+---
+
+**6. 🔑 ALTER OWNER** – Nastavenie vlastníctva tabuľky.
+
+```sql
+ALTER TABLE zamestnanci OWNER TO novy_pouzivatel;
+```
+
+Tento príkaz prenesie vlastníctvo tabuľky `zamestnanci` na používateľa `novy_pouzivatel`.
+
+---
+
+**7. 🗑️ DROP USER** – Odstránenie používateľa.
+
+```sql
+DROP USER novy_pouzivatel;
+```
+
+Tento príkaz odstráni používateľa `novy_pouzivatel`. Predtým musia byť odstránené všetky jeho závislosti.
+
 ## Linux PgAdmin
 **1. Importujte GPG kľúč pre úložisko:**  
 curl -fsSL https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo tee /etc/apt/trusted.gpg.d/pgadmin.asc  
