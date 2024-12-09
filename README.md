@@ -26,10 +26,10 @@ Materiály k online kurzom PostgreSQL
 
 Detailnejšie vysvetlenie:
 1. **\l** – Tento príkaz vypíše všetky dostupné databázy v rámci inštancie PostgreSQL.  
-1. **\c [databáza]** – Umožňuje prepnúť sa do inej databázy, ktorú chcete spravovať.  
-1. **\dt** – Zobrazí všetky tabuľky v aktuálnej schéme (public schéma, ak nie je špecifikované inak).  
-1. **\d [tabuľka]** – Poskytne detailné informácie o štruktúre tabuľky, ako sú stĺpce, dátové typy, indexy, a ďalšie.  
-1. **\dn** – Umožňuje získať prehľad o všetkých schémach dostupných v databáze.  
+1. **\c [databáza]** – Umožňuje prepnúť sa do inej databázy, ktorú chcete spravovať.    
+1. **\dt** – Zobrazí všetky tabuľky v aktuálnej schéme (public schéma, ak nie je špecifikované inak).    
+1. **\d [tabuľka]** – Poskytne detailné informácie o štruktúre tabuľky, ako sú stĺpce, dátové typy, indexy, a ďalšie.    
+1. **\dn** – Umožňuje získať prehľad o všetkých schémach dostupných v databáze.    
 1. **\di** – Zobrazuje existujúce indexy, čo je užitočné pri optimalizácii výkonu databázy.  
 1. **\dv** – Pomocou tohto príkazu získate zoznam definovaných pohľadov (views).  
 1. **\du** – Tento príkaz zobrazuje všetkých používateľov a ich priradené role.  
@@ -342,13 +342,13 @@ Tento príkaz odstráni používateľa `novy_pouzivatel`. Predtým musia byť od
 ⭐ Prehľad PostgreSQL privilégia používateľov s vysvetleniami
 Každé z týchto nastavení má svoje špecifické použitie v rôznych scenároch správy PostgreSQL databáz.
 
-**1. Can login?:** Povolenie na prihlásenie používateľa. Ak je toto začiarknuté, účet sa môže použiť na prihlásenie do databázy. Ak nie je začiarknuté, používateľ môže byť len rola na delegovanie práv.
-**1. Superuser?:** Superužívateľ má neobmedzené privilégiá v databáze PostgreSQL, čo znamená, že môže robiť akékoľvek operácie vrátane vytvárania databáz, manipulácie so všetkými tabuľkami a vykonávania akcií bez obmedzenia práv.
-**1. Create roles?:** Toto oprávnenie umožňuje danému používateľovi vytvárať nové role alebo upravovať existujúce role. Ak to nie je začiarknuté, používateľ nemá možnosť meniť roly.
-**1. Create databases?:** Umožňuje používateľovi vytvárať nové databázy. Toto je dôležité oprávnenie pre administrátorov alebo vývojárov, ktorí potrebujú vytvoriť nové prostredia na prácu.
-**1. Inherit rights from the parent roles?:** Ak je začiarknuté, táto rola alebo používateľ bude automaticky dediť všetky práva, ktoré má nadradená rola. Ak nie je začiarknuté, dedenie nie je možné a práva musia byť udelené explicitne.
-**1. Can initiate streaming replication and backups?:** Umožňuje používateľovi spustiť streaming replication (replikácia dát v reálnom čase medzi dvoma PostgreSQL servermi) alebo vykonávať zálohovacie procesy. Toto oprávnenie sa zvyčajne udeľuje správcom servera.
-**1. Bypass RLS? (Row-Level Security):** Ak je začiarknuté, používateľ môže obísť Row-Level Security pravidlá. Toto oprávnenie je citlivé, pretože RLS zabezpečuje, aby používatelia mali prístup len k určitým riadkom v tabuľkách, podľa definovaných politík. Toto oprávnenie umožňuje používateľovi ignorovať tieto pravidlá a vidieť všetky dáta.
+**1. Can login?:** Povolenie na prihlásenie používateľa. Ak je toto začiarknuté, účet sa môže použiť na prihlásenie do databázy. Ak nie je začiarknuté, používateľ môže byť len rola na delegovanie práv.  
+**1. Superuser?:** Superužívateľ má neobmedzené privilégiá v databáze PostgreSQL, čo znamená, že môže robiť akékoľvek operácie vrátane vytvárania databáz, manipulácie so všetkými tabuľkami a vykonávania akcií bez obmedzenia práv.  
+**1. Create roles?:** Toto oprávnenie umožňuje danému používateľovi vytvárať nové role alebo upravovať existujúce role. Ak to nie je začiarknuté, používateľ nemá možnosť meniť roly.  
+**1. Create databases?:** Umožňuje používateľovi vytvárať nové databázy. Toto je dôležité oprávnenie pre administrátorov alebo vývojárov, ktorí potrebujú vytvoriť nové prostredia na prácu.  
+**1. Inherit rights from the parent roles?:** Ak je začiarknuté, táto rola alebo používateľ bude automaticky dediť všetky práva, ktoré má nadradená rola. Ak nie je začiarknuté, dedenie nie je možné a práva musia byť udelené explicitne.  
+**1. Can initiate streaming replication and backups?:** Umožňuje používateľovi spustiť streaming replication (replikácia dát v reálnom čase medzi dvoma PostgreSQL servermi) alebo vykonávať zálohovacie procesy. Toto oprávnenie sa zvyčajne udeľuje správcom servera.  
+**1. Bypass RLS? (Row-Level Security):** Ak je začiarknuté, používateľ môže obísť Row-Level Security pravidlá. Toto oprávnenie je citlivé, pretože RLS zabezpečuje, aby používatelia mali prístup len k určitým riadkom v tabuľkách, podľa definovaných politík. Toto oprávnenie umožňuje používateľovi ignorovať tieto pravidlá a vidieť všetky dáta.  
 
 <a name="instalacia-linux-pgadmin"></a>
 ## 🐧 Inštalácia Linux pgAdmin
