@@ -1,0 +1,101 @@
+﻿id;nazov;kategoria;cena;skladom;vyrobca
+1;Samsung Galaxy S22;Oblečenie;14;TRUE;Apple
+2;Nike Air Max;Knihy;57;TRUE;Adidas
+3;Kindle Paperwhite;Knihy;84;TRUE;Dell
+4;Xiaomi Mi Band 7;Knihy;19;TRUE;Apple
+5;Samsung Galaxy S22;Knihy;94;FALSE;Dell
+6;Dell XPS 13;Elektronika;95;TRUE;Dell
+7;Samsung Galaxy S22;Knihy;74;TRUE;Adidas
+8;Dell XPS 13;Šport;95;TRUE;Dell
+9;Nike Air Max;Elektronika;44;FALSE;Dell
+10;Adidas Ultraboost;Elektronika;28;TRUE;Sony
+11;Samsung Galaxy S22;Oblečenie;74;TRUE;Samsung
+12;GoPro HERO10;Šport;30;FALSE;Nike
+13;iPhone 14;Šport;81;TRUE;Dell
+14;Adidas Ultraboost;Elektronika;73;TRUE;Adidas
+15;GoPro HERO10;Knihy;19;TRUE;Samsung
+16;MacBook Air;Šport;47;TRUE;Dell
+17;Adidas Ultraboost;Elektronika;53;TRUE;Dell
+18;Adidas Ultraboost;Šport;6;FALSE;Apple
+19;iPhone 14;Šport;59;TRUE;Dell
+20;Kindle Paperwhite;Knihy;34;FALSE;Nike
+21;Adidas Ultraboost;Oblečenie;68;FALSE;Samsung
+22;GoPro HERO10;Elektronika;75;FALSE;Nike
+23;Dell XPS 13;Šport;75;TRUE;Samsung
+24;Sony WH-1000XM4;Knihy;54;FALSE;Sony
+25;Kindle Paperwhite;Oblečenie;48;TRUE;Adidas
+26;Sony WH-1000XM4;Šport;69;FALSE;Apple
+27;Xiaomi Mi Band 7;Elektronika;55;TRUE;Dell
+28;MacBook Air;Elektronika;85;TRUE;Samsung
+29;Xiaomi Mi Band 7;Knihy;94;FALSE;Sony
+30;iPhone 14;Elektronika;88;FALSE;Samsung
+31;iPhone 14;Šport;60;TRUE;Dell
+32;Samsung Galaxy S22;Oblečenie;34;TRUE;Adidas
+33;Kindle Paperwhite;Oblečenie;29;TRUE;Adidas
+34;GoPro HERO10;Knihy;94;FALSE;Sony
+35;Xiaomi Mi Band 7;Elektronika;45;TRUE;Adidas
+36;GoPro HERO10;Šport;7;TRUE;Samsung
+37;MacBook Air;Šport;73;FALSE;Samsung
+38;Dell XPS 13;Knihy;14;TRUE;Adidas
+39;Xiaomi Mi Band 7;Šport;75;FALSE;Nike
+40;Adidas Ultraboost;Elektronika;17;TRUE;Nike
+41;GoPro HERO10;Elektronika;99;FALSE;Adidas
+42;Kindle Paperwhite;Šport;89;TRUE;Sony
+43;Xiaomi Mi Band 7;Elektronika;98;TRUE;Dell
+44;Nike Air Max;Knihy;5;FALSE;Nike
+45;Adidas Ultraboost;Šport;49;FALSE;Sony
+46;Dell XPS 13;Šport;10;TRUE;Dell
+47;Dell XPS 13;Šport;7;FALSE;Sony
+48;Adidas Ultraboost;Knihy;12;FALSE;Nike
+49;Samsung Galaxy S22;Knihy;18;FALSE;Sony
+50;Xiaomi Mi Band 7;Elektronika;57;TRUE;Dell
+51;Sony WH-1000XM4;Elektronika;6;FALSE;Sony
+52;Adidas Ultraboost;Oblečenie;11;TRUE;Dell
+53;Dell XPS 13;Knihy;93;FALSE;Samsung
+54;Sony WH-1000XM4;Elektronika;53;TRUE;Sony
+55;Dell XPS 13;Oblečenie;56;TRUE;Dell
+56;Dell XPS 13;Elektronika;45;TRUE;Nike
+57;Nike Air Max;Elektronika;84;TRUE;Samsung
+58;MacBook Air;Šport;28;TRUE;Sony
+59;Sony WH-1000XM4;Knihy;44;TRUE;Samsung
+60;Sony WH-1000XM4;Elektronika;36;FALSE;Nike
+61;Xiaomi Mi Band 7;Knihy;25;FALSE;Nike
+62;Samsung Galaxy S22;Oblečenie;10;FALSE;Apple
+63;Sony WH-1000XM4;Oblečenie;63;TRUE;Adidas
+64;MacBook Air;Oblečenie;96;TRUE;Sony
+65;Adidas Ultraboost;Knihy;82;TRUE;Samsung
+66;GoPro HERO10;Knihy;11;TRUE;Apple
+67;MacBook Air;Knihy;24;FALSE;Apple
+68;Sony WH-1000XM4;Elektronika;51;FALSE;Nike
+69;Xiaomi Mi Band 7;Knihy;61;TRUE;Adidas
+70;Kindle Paperwhite;Šport;38;TRUE;Dell
+71;Xiaomi Mi Band 7;Oblečenie;33;FALSE;Apple
+72;Xiaomi Mi Band 7;Elektronika;69;FALSE;Samsung
+73;Xiaomi Mi Band 7;Oblečenie;58;FALSE;Nike
+74;Dell XPS 13;Oblečenie;44;TRUE;Sony
+75;Sony WH-1000XM4;Elektronika;46;TRUE;Nike
+76;MacBook Air;Elektronika;6;FALSE;Sony
+77;Xiaomi Mi Band 7;Oblečenie;21;TRUE;Apple
+78;Nike Air Max;Elektronika;66;FALSE;Sony
+79;Sony WH-1000XM4;Šport;45;TRUE;Adidas
+80;Nike Air Max;Knihy;24;TRUE;Apple
+81;Adidas Ultraboost;Šport;8;TRUE;Sony
+82;MacBook Air;Knihy;15;TRUE;Samsung
+83;iPhone 14;Elektronika;69;FALSE;Dell
+84;Xiaomi Mi Band 7;Šport;15;FALSE;Dell
+85;MacBook Air;Elektronika;50;FALSE;Samsung
+86;Nike Air Max;Knihy;25;TRUE;Adidas
+87;Nike Air Max;Oblečenie;16;FALSE;Samsung
+88;MacBook Air;Elektronika;41;TRUE;Samsung
+89;iPhone 14;Knihy;81;TRUE;Sony
+90;Sony WH-1000XM4;Šport;27;TRUE;Dell
+91;GoPro HERO10;Šport;32;FALSE;Samsung
+92;Dell XPS 13;Šport;51;TRUE;Samsung
+93;Nike Air Max;Oblečenie;92;TRUE;Sony
+94;Nike Air Max;Šport;32;TRUE;Dell
+95;iPhone 14;Knihy;25;FALSE;Adidas
+96;Adidas Ultraboost;Elektronika;51;TRUE;Dell
+97;Xiaomi Mi Band 7;Šport;96;FALSE;Apple
+98;Nike Air Max;Elektronika;94;TRUE;Dell
+99;Sony WH-1000XM4;Oblečenie;36;TRUE;Nike
+100;GoPro HERO10;Knihy;75;FALSE;Dell

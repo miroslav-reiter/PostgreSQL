@@ -1,0 +1,101 @@
+﻿id;meno;email;telefon;adresa;vek;pohlavie
+1;Mária Kováč;peter.kováč@example.sk;+421 900 279 307;Hviezdoslavova 30, Trenčín;23;Muž
+2;Jana Baláž;peter.urban@example.sk;+421 900 883 819;Hviezdoslavova 71, Poprad;37;Žena
+3;Martin Polák;jana.novák@example.sk;+421 900 266 559;Hlavná 111, Košice;37;Muž
+4;Mária Horváth;jozef.szabo@example.sk;+421 900 262 604;Dlhá 132, Banská Bystrica;41;Žena
+5;Jozef Kováč;mária.kováč@example.sk;+421 900 166 953;Janka Kráľa 147, Banská Bystrica;54;Muž
+6;Eva Novák;lucia.dudáš@example.sk;+421 900 732 447;Janka Kráľa 94, Trnava;55;Žena
+7;Mária Urban;mária.polák@example.sk;+421 900 401 607;Janka Kráľa 48, Trenčín;39;Muž
+8;Mária Novák;lucia.varga@example.sk;+421 900 860 797;Námestie SNP 148, Poprad;29;Žena
+9;Lucia Polák;mária.dudáš@example.sk;+421 900 261 943;Hviezdoslavova 77, Žilina;63;Muž
+10;Martin Urban;eva.szabo@example.sk;+421 900 742 773;Školská 48, Prešov;35;Žena
+11;Peter Polák;michal.urban@example.sk;+421 900 346 878;Hviezdoslavova 124, Trnava;43;Muž
+12;Jana Horváth;lucia.polák@example.sk;+421 900 649 822;Krátka 110, Prešov;29;Žena
+13;Lucia Tóth;zuzana.varga@example.sk;+421 900 185 268;Námestie SNP 104, Trnava;20;Muž
+14;Jana Dudáš;peter.urban@example.sk;+421 900 427 950;Školská 10, Banská Bystrica;48;Žena
+15;Mária Tóth;jana.varga@example.sk;+421 900 231 238;Štefánikova 44, Bratislava;35;Muž
+16;Michal Dudáš;martin.kováč@example.sk;+421 900 983 557;Janka Kráľa 19, Prešov;44;Žena
+17;Martin Horváth;mária.polák@example.sk;+421 900 122 369;Školská 47, Žilina;28;Muž
+18;Peter Horváth;zuzana.szabo@example.sk;+421 900 715 317;Janka Kráľa 51, Trenčín;42;Žena
+19;Mária Szabo;eva.szabo@example.sk;+421 900 175 615;Štefánikova 57, Poprad;64;Muž
+20;Lucia Kováč;martin.dudáš@example.sk;+421 900 765 193;Janka Kráľa 79, Nitra;61;Žena
+21;Lucia Dudáš;pavol.varga@example.sk;+421 900 239 109;Hlavná 113, Prešov;19;Muž
+22;Eva Tóth;eva.urban@example.sk;+421 900 516 363;Hviezdoslavova 46, Bratislava;18;Žena
+23;Pavol Urban;michal.baláž@example.sk;+421 900 205 978;Sládkovičova 21, Nitra;22;Muž
+24;Eva Dudáš;lucia.polák@example.sk;+421 900 286 928;Janka Kráľa 85, Žilina;31;Žena
+25;Lucia Dudáš;jozef.kováč@example.sk;+421 900 499 120;Námestie SNP 77, Žilina;25;Muž
+26;Pavol Tóth;zuzana.kováč@example.sk;+421 900 520 498;Sládkovičova 23, Nitra;45;Žena
+27;Pavol Horváth;mária.polák@example.sk;+421 900 827 880;Janka Kráľa 52, Prešov;19;Muž
+28;Peter Baláž;pavol.horváth@example.sk;+421 900 824 751;Sládkovičova 4, Martin;35;Žena
+29;Pavol Dudáš;martin.baláž@example.sk;+421 900 582 701;Janka Kráľa 29, Žilina;56;Muž
+30;Jozef Varga;jana.urban@example.sk;+421 900 177 984;Janka Kráľa 103, Žilina;42;Žena
+31;Lucia Szabo;jozef.szabo@example.sk;+421 900 578 109;Sládkovičova 18, Nitra;54;Muž
+32;Jana Tóth;jana.dudáš@example.sk;+421 900 592 711;Dlhá 66, Trenčín;35;Žena
+33;Lucia Novák;lucia.tóth@example.sk;+421 900 331 416;Sládkovičova 115, Bratislava;49;Muž
+34;Michal Horváth;eva.kováč@example.sk;+421 900 572 536;Dlhá 105, Košice;25;Žena
+35;Eva Tóth;jana.tóth@example.sk;+421 900 507 464;Krátka 58, Poprad;22;Muž
+36;Mária Kováč;eva.tóth@example.sk;+421 900 495 926;Hlavná 54, Košice;28;Žena
+37;Jozef Tóth;eva.polák@example.sk;+421 900 252 565;Dlhá 112, Prešov;22;Muž
+38;Pavol Tóth;lucia.urban@example.sk;+421 900 738 985;Hlavná 21, Košice;64;Žena
+39;Martin Varga;jozef.szabo@example.sk;+421 900 208 200;Sládkovičova 6, Žilina;38;Muž
+40;Jozef Horváth;peter.novák@example.sk;+421 900 225 751;Moyzesova 90, Martin;32;Žena
+41;Zuzana Tóth;martin.baláž@example.sk;+421 900 919 431;Janka Kráľa 127, Žilina;29;Muž
+42;Peter Polák;jana.urban@example.sk;+421 900 746 282;Sládkovičova 142, Poprad;26;Žena
+43;Lucia Baláž;martin.urban@example.sk;+421 900 479 638;Krátka 59, Poprad;58;Muž
+44;Pavol Varga;zuzana.kováč@example.sk;+421 900 235 504;Janka Kráľa 16, Košice;47;Žena
+45;Lucia Varga;zuzana.dudáš@example.sk;+421 900 205 148;Moyzesova 130, Žilina;56;Muž
+46;Jana Urban;zuzana.tóth@example.sk;+421 900 578 937;Štefánikova 48, Martin;51;Žena
+47;Michal Horváth;jozef.dudáš@example.sk;+421 900 777 209;Dlhá 46, Nitra;23;Muž
+48;Mária Novák;jozef.polák@example.sk;+421 900 875 775;Dlhá 132, Banská Bystrica;63;Žena
+49;Jozef Horváth;jozef.dudáš@example.sk;+421 900 655 393;Školská 88, Martin;57;Muž
+50;Peter Urban;eva.varga@example.sk;+421 900 178 104;Janka Kráľa 2, Trnava;32;Žena
+51;Martin Varga;jozef.polák@example.sk;+421 900 518 469;Krátka 111, Prešov;61;Muž
+52;Mária Varga;michal.varga@example.sk;+421 900 242 214;Dlhá 127, Prešov;36;Žena
+53;Eva Polák;lucia.urban@example.sk;+421 900 101 740;Janka Kráľa 136, Košice;21;Muž
+54;Martin Urban;eva.tóth@example.sk;+421 900 748 936;Dlhá 115, Košice;23;Žena
+55;Jozef Kováč;jana.tóth@example.sk;+421 900 671 944;Moyzesova 127, Bratislava;18;Muž
+56;Pavol Dudáš;michal.novák@example.sk;+421 900 230 994;Sládkovičova 73, Martin;26;Žena
+57;Peter Varga;lucia.varga@example.sk;+421 900 106 444;Hviezdoslavova 124, Trenčín;62;Muž
+58;Zuzana Tóth;peter.dudáš@example.sk;+421 900 535 771;Moyzesova 51, Košice;27;Žena
+59;Mária Szabo;michal.urban@example.sk;+421 900 113 899;Hlavná 54, Banská Bystrica;62;Muž
+60;Zuzana Urban;peter.baláž@example.sk;+421 900 600 507;Janka Kráľa 21, Prešov;50;Žena
+61;Zuzana Urban;martin.szabo@example.sk;+421 900 453 207;Štefánikova 91, Nitra;51;Muž
+62;Mária Varga;jozef.kováč@example.sk;+421 900 971 261;Krátka 49, Žilina;50;Žena
+63;Zuzana Tóth;mária.tóth@example.sk;+421 900 378 585;Dlhá 121, Nitra;42;Muž
+64;Lucia Novák;zuzana.tóth@example.sk;+421 900 403 605;Hviezdoslavova 82, Bratislava;60;Žena
+65;Jozef Horváth;michal.szabo@example.sk;+421 900 632 359;Štefánikova 3, Žilina;49;Muž
+66;Peter Tóth;michal.urban@example.sk;+421 900 717 161;Sládkovičova 108, Bratislava;42;Žena
+67;Pavol Szabo;peter.horváth@example.sk;+421 900 656 527;Krátka 110, Bratislava;19;Muž
+68;Jozef Horváth;mária.szabo@example.sk;+421 900 698 197;Sládkovičova 101, Trnava;32;Žena
+69;Jana Horváth;peter.kováč@example.sk;+421 900 832 685;Sládkovičova 119, Trnava;33;Muž
+70;Mária Kováč;eva.szabo@example.sk;+421 900 719 258;Hlavná 28, Prešov;57;Žena
+71;Michal Polák;peter.tóth@example.sk;+421 900 586 205;Janka Kráľa 79, Žilina;26;Muž
+72;Eva Tóth;jana.szabo@example.sk;+421 900 331 949;Sládkovičova 64, Trnava;55;Žena
+73;Zuzana Kováč;zuzana.polák@example.sk;+421 900 873 659;Sládkovičova 105, Žilina;63;Muž
+74;Pavol Horváth;mária.varga@example.sk;+421 900 650 428;Námestie SNP 134, Banská Bystrica;53;Žena
+75;Martin Tóth;mária.dudáš@example.sk;+421 900 876 563;Janka Kráľa 129, Trenčín;64;Muž
+76;Martin Polák;pavol.varga@example.sk;+421 900 133 472;Krátka 102, Prešov;51;Žena
+77;Martin Tóth;jozef.varga@example.sk;+421 900 503 986;Dlhá 91, Trenčín;25;Muž
+78;Eva Horváth;lucia.dudáš@example.sk;+421 900 144 472;Moyzesova 94, Trenčín;53;Žena
+79;Pavol Kováč;zuzana.tóth@example.sk;+421 900 475 409;Hviezdoslavova 72, Poprad;22;Muž
+80;Pavol Varga;lucia.baláž@example.sk;+421 900 371 652;Školská 46, Prešov;53;Žena
+81;Mária Novák;pavol.dudáš@example.sk;+421 900 444 223;Hviezdoslavova 82, Bratislava;61;Muž
+82;Pavol Tóth;mária.polák@example.sk;+421 900 534 898;Hviezdoslavova 68, Trenčín;48;Žena
+83;Zuzana Tóth;mária.novák@example.sk;+421 900 530 913;Sládkovičova 141, Košice;58;Muž
+84;Martin Urban;jana.urban@example.sk;+421 900 382 405;Námestie SNP 112, Martin;43;Žena
+85;Jozef Szabo;michal.tóth@example.sk;+421 900 830 921;Dlhá 144, Banská Bystrica;30;Muž
+86;Zuzana Tóth;zuzana.polák@example.sk;+421 900 251 409;Školská 84, Nitra;33;Žena
+87;Lucia Tóth;mária.dudáš@example.sk;+421 900 321 886;Štefánikova 23, Trnava;21;Muž
+88;Pavol Szabo;jana.szabo@example.sk;+421 900 699 733;Hviezdoslavova 10, Poprad;41;Žena
+89;Martin Urban;jana.baláž@example.sk;+421 900 952 962;Hviezdoslavova 69, Martin;45;Muž
+90;Jana Polák;jana.horváth@example.sk;+421 900 910 132;Hlavná 5, Martin;42;Žena
+91;Zuzana Urban;jana.horváth@example.sk;+421 900 613 321;Štefánikova 7, Prešov;30;Muž
+92;Michal Horváth;lucia.varga@example.sk;+421 900 151 308;Krátka 29, Žilina;23;Žena
+93;Pavol Dudáš;mária.varga@example.sk;+421 900 404 180;Školská 47, Trnava;21;Muž
+94;Zuzana Novák;lucia.polák@example.sk;+421 900 967 355;Hlavná 149, Bratislava;34;Žena
+95;Michal Dudáš;pavol.szabo@example.sk;+421 900 404 459;Hviezdoslavova 109, Banská Bystrica;21;Muž
+96;Eva Novák;jozef.polák@example.sk;+421 900 301 134;Námestie SNP 78, Trenčín;39;Žena
+97;Pavol Szabo;michal.urban@example.sk;+421 900 168 959;Sládkovičova 133, Poprad;19;Muž
+98;Jana Kováč;eva.dudáš@example.sk;+421 900 749 294;Školská 59, Košice;61;Žena
+99;Pavol Horváth;lucia.kováč@example.sk;+421 900 709 494;Hviezdoslavova 145, Trenčín;55;Muž
+100;Zuzana Dudáš;pavol.urban@example.sk;+421 900 441 979;Štefánikova 118, Žilina;63;Žena
