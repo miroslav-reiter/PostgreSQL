@@ -102,6 +102,9 @@ Tento príkaz vytvorí komprimovaný TAR archív s názvom `archív.tar.gz`, kto
 tar -xzvf archív.tar.gz
 ```
 
+Tento príkaz rozbalí komprimovaný TAR archív `archív.tar.gz` a obnoví všetky zahrnuté súbory a adresáre.
+
+---
 
 # Najčastejšie používané sekcie v postgresql.conf
 
@@ -211,7 +214,4 @@ hot_standby = on
 ---
 
 
-Tento príkaz rozbalí komprimovaný TAR archív `archív.tar.gz` a obnoví všetky zahrnuté súbory a adresáre.
-
----
 
