@@ -355,16 +355,22 @@ Každé z týchto nastavení má svoje špecifické použitie v rôznych scenár
 <a name="instalacia-linux-pgadmin"></a>
 ## 🐧 Inštalácia Linux pgAdmin
 **1. Importujte GPG kľúč pre úložisko:**  
+```bash
 curl -fsSL https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo tee /etc/apt/trusted.gpg.d/pgadmin.asc  
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add -  
+```
 
-**2. Pridajte úložisko do vášho systému:** 
+**2. Pridajte úložisko do vášho systému:**
+```bash
 echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" | sudo tee /etc/apt/sources.list.d/pgadmin4.list && sudo apt update  
+```
 
-**3. Nainštalujte pgAdmin**  
+**3. Nainštalujte pgAdmin**
+```bash
 sudo apt install pgadmin4-desktop  
 sudo snap install pgadmin4  
-pgadmin4  
+pgadmin4
+```
 sudo apt install pgadmin4-web
 http://127.0.0.1/pgadmin4
 
