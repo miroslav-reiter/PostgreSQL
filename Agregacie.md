@@ -1,5 +1,29 @@
-
 # Príklady na využitie agregácie
+Agregácia je proces zhromažďovania údajov a ich spracovania do jedného výsledku, ktorý sumarizuje alebo zoskupuje viacero riadkov dát do jedného hodnotového výstupu. Agregácia sa používa na získanie súhrnných informácií, napríklad počtu riadkov, priemernej hodnoty, maximálnej alebo minimálnej hodnoty.
+
+Príklady situácií, kde sa využíva agregácia:
+1. Počet predaných produktov v každom mesiaci.
+2. Priemerný príjem zamestnancov v rôznych oddeleniach.
+3. Maximálna hodnota objednávky za deň.
+
+Agregačné funkcie v PostgreSQL umožňujú vykonávať agregáciu nad množinami údajov. Tieto funkcie zoskupujú dáta a vracajú jednu hodnotu ako výsledok. Používajú sa často v kombinácii s príkazom GROUP BY.
+
+## Najpoužívanejšie agregačné funkcie v PostgreSQL:
+
+1. COUNT(): Počíta počet riadkov v tabuľke alebo výsledkoch dopytu.
+Príklad: SELECT COUNT(*) FROM objednavky;
+1. SUM(): Počíta súčet hodnôt v stĺpci.
+Príklad: SELECT SUM(cena) FROM objednavky;
+1. AVG(): Počíta priemernú hodnotu v stĺpci.
+Príklad: SELECT AVG(cena) FROM objednavky;
+1. MAX(): Nájde maximálnu hodnotu v stĺpci.
+Príklad: SELECT MAX(cena) FROM objednavky;
+1. MIN(): Nájde minimálnu hodnotu v stĺpci.
+Príklad: SELECT MIN(cena) FROM objednavky;
+1. STRING_AGG(): Zreťazí hodnoty do jedného reťazca s použitím určeného oddeľovača.
+Príklad: SELECT STRING_AGG(meno, ', ') FROM zamestnanci;
+1. ARRAY_AGG(): Vytvára pole (array) z hodnôt stĺpca.
+Príklad: SELECT ARRAY_AGG(meno) FROM zamestnanci;   
 
 ### 1. E-commerce: Sumarizácia predaja
 Výpočet celkového predaja za deň, mesiac alebo rok.
@@ -76,7 +100,16 @@ GROUP BY mesiac, lokalita;
 ### 10. IT: Monitorovanie výkonu serverov
 Priemerná doba odozvy servera za hodinu.
 ```sql
-SELECT HOUR(cas), AVG(doba_odozvy) AS priemerna_odozva
-FROM server_logy
-GROUP BY HOUR(cas);
+SELECT EXTRACT(HOUR FROM cas) AS hodina, AVG(doba_odozvy) AS priemerna_odozva
+FROM testovacie_data_it
+GROUP BY EXTRACT(HOUR FROM cas)
+ORDER BY hodina;
+```
+
+```sql
+SELECT DATE_PART('hour', cas) AS hodina, AVG(doba_odozvy) AS priemerna_odozva
+FROM testovacie_data_it
+GROUP BY DATE_PART('hour', cas)
+ORDER BY hodina;
+
 ```
