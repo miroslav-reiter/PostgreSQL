@@ -63,3 +63,46 @@ restore_command = 'cp /cesta/na/archív/%f %p'
 Tento príkaz použije archivované logy na obnovu databázy do konkrétneho bodu v čase.
 
 ---
+
+# Použitie TAR súborov
+
+## 1. 📦 Vytvorenie TAR súboru – Archivácia viacerých súborov.
+
+```bash
+tar -cvf archív.tar súbor1 súbor2 adresár/
+```
+
+Tento príkaz vytvorí TAR archív s názvom `archív.tar`, ktorý obsahuje `súbor1`, `súbor2` a celý obsah adresára `adresár`.
+
+---
+
+## 2. 📂 Rozbalenie TAR súboru – Extrakcia obsahu archívu.
+
+```bash
+tar -xvf archív.tar
+```
+
+Tento príkaz rozbalí všetky súbory a adresáre uložené v `archív.tar`.
+
+---
+
+## 3. 🗜️ Vytvorenie komprimovaného TAR súboru – Archivácia s kompresiou.
+
+```bash
+tar -czvf archív.tar.gz súbor1 adresár/
+```
+
+Tento príkaz vytvorí komprimovaný TAR archív s názvom `archív.tar.gz`, ktorý obsahuje `súbor1` a obsah adresára `adresár`.
+
+---
+
+## 4. 🔓 Rozbalenie komprimovaného TAR súboru – Extrakcia s dekompresiou.
+
+```bash
+tar -xzvf archív.tar.gz
+```
+
+Tento príkaz rozbalí komprimovaný TAR archív `archív.tar.gz` a obnoví všetky zahrnuté súbory a adresáre.
+
+---
+
