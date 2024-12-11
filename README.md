@@ -350,6 +350,8 @@ Každé z týchto nastavení má svoje špecifické použitie v rôznych scenár
 **6. Can initiate streaming replication and backups?:** Umožňuje používateľovi spustiť streaming replication (replikácia dát v reálnom čase medzi dvoma PostgreSQL servermi) alebo vykonávať zálohovacie procesy. Toto oprávnenie sa zvyčajne udeľuje správcom servera.  
 **7. Bypass RLS? (Row-Level Security):** Ak je začiarknuté, používateľ môže obísť Row-Level Security pravidlá. Toto oprávnenie je citlivé, pretože RLS zabezpečuje, aby používatelia mali prístup len k určitým riadkom v tabuľkách, podľa definovaných politík. Toto oprávnenie umožňuje používateľovi ignorovať tieto pravidlá a vidieť všetky dáta.  
 
+![postgresql-privilegia](https://github.com/user-attachments/assets/9827e4e8-59ca-45ac-81a2-32d45636c482)
+
 <a name="instalacia-linux-pgadmin"></a>
 ## 🐧 Inštalácia Linux pgAdmin
 **1. Importujte GPG kľúč pre úložisko:**  
