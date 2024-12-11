@@ -102,6 +102,115 @@ Tento príkaz vytvorí komprimovaný TAR archív s názvom `archív.tar.gz`, kto
 tar -xzvf archív.tar.gz
 ```
 
+
+# Najčastejšie používané sekcie v postgresql.conf
+
+## 1. 🔌 Connection and Authentication Settings – Pripojenie a autentifikácia.
+
+### Nastavenie IP adries na pripojenie:
+```text
+listen_addresses = 'localhost'  # Len lokálne pripojenia
+listen_addresses = '*'          # Pripojenia zo všetkých IP adries
+```
+
+### Nastavenie portu:
+```text
+port = 5432
+```
+
+---
+
+## 2. 💾 Resource Usage – Pamäť, CPU a disk.
+
+### Nastavenie pamäte pre zdieľané vyrovnávacie pamäte:
+```text
+shared_buffers = 128MB
+```
+
+### Pamäť pre operácie ako triedenie:
+```text
+work_mem = 4MB
+```
+
+### Pamäť pre údržbové úlohy:
+```text
+maintenance_work_mem = 64MB
+```
+
+---
+
+## 3. 📝 Logging Settings – Logovanie.
+
+### Miesto, kam sa logy zapisujú:
+```text
+log_destination = 'stderr'
+```
+
+### Ukladanie logov do súborov:
+```text
+logging_collector = on
+```
+
+### Adresár na uloženie logov:
+```text
+log_directory = 'pg_log'
+```
+
+### Názov logovacích súborov:
+```text
+log_filename = 'postgresql-%Y-%m-%d.log'
+```
+
+---
+
+## 4. 🚀 Query Tuning – Optimalizácia dotazov.
+
+### Odhad dostupnej pamäte pre cachovanie:
+```text
+effective_cache_size = 4GB
+```
+
+### Náklady na náhodný prístup na disk:
+```text
+random_page_cost = 4.0
+```
+
+---
+
+## 5. 📜 WAL (Write-Ahead Logging) and Checkpoints – Logovanie a kontrolné body.
+
+### Nastavenie úrovne logovania:
+```text
+wal_level = replica
+```
+
+### Povolenie archivácie WAL logov:
+```text
+archive_mode = on
+```
+
+### Príkaz na archiváciu logov:
+```text
+archive_command = 'cp %p /cesta/k/archívu/%f'
+```
+
+---
+
+## 6. 🌐 Replication Settings – Replikácia.
+
+### Maximálny počet procesov odosielajúcich WAL logy:
+```text
+max_wal_senders = 10
+```
+
+### Povolenie čítacích dotazov na replikovanom serveri:
+```text
+hot_standby = on
+```
+
+---
+
+
 Tento príkaz rozbalí komprimovaný TAR archív `archív.tar.gz` a obnoví všetky zahrnuté súbory a adresáre.
 
 ---
