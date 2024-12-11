@@ -1,0 +1,101 @@
+﻿id;meno;pozicia;odbor;mzda;lokalita;sef_id;dodatocne_cislo1;dodatocne_cislo2;aktivny;typ_kontraktu
+1;Peter Novák;Tester;IT;3184;Trenčín;93;68;416;FALSE;Full-time
+2;Jozef Szabo;Tester;IT;2717;Poprad;55;58;502;FALSE;Full-time
+3;Zuzana Dudáš;Tester;IT;2745;Prešov;77;50;245;FALSE;Freelancer
+4;Eva Szabo;Projektový manažér;Výskum;3169;Nitra;52;7;800;TRUE;Part-time
+5;Zuzana Horváth;Tester;Marketing;3877;Poprad;99;90;316;FALSE;Full-time
+6;Michal Dudáš;Vývojár;Výskum;1144;Prešov;98;16;749;FALSE;Freelancer
+7;Pavol Varga;Analytik;Výskum;4895;Martin;52;96;108;FALSE;Part-time
+8;Zuzana Varga;Tester;IT;4600;Poprad;99;49;648;TRUE;Freelancer
+9;Jozef Baláž;Analytik;Marketing;2931;Nitra;97;93;156;FALSE;Full-time
+10;Zuzana Szabo;Tester;IT;1995;Martin;42;86;113;TRUE;Full-time
+11;Jana Tóth;Vývojár;Financie;2284;Bratislava;16;58;894;FALSE;Part-time
+12;Lucia Kováč;Vývojár;IT;4459;Martin;52;64;132;FALSE;Freelancer
+13;Pavol Szabo;Analytik;Výskum;4096;Banská Bystrica;42;48;554;FALSE;Full-time
+14;Peter Kováč;Projektový manažér;Výskum;1636;Poprad;6;54;416;FALSE;Part-time
+15;Mária Szabo;Projektový manažér;Výskum;4274;Prešov;37;28;561;FALSE;Part-time
+16;Martin Tóth;Projektový manažér;IT;3438;Nitra;31;13;719;TRUE;Freelancer
+17;Eva Baláž;Tester;Financie;1646;Prešov;35;16;413;FALSE;Part-time
+18;Michal Polák;Projektový manažér;Marketing;3645;Prešov;75;63;750;TRUE;Part-time
+19;Lucia Szabo;Tester;Výskum;2770;Trenčín;60;86;718;TRUE;Part-time
+20;Peter Dudáš;Vývojár;Financie;3821;Nitra;72;20;474;TRUE;Freelancer
+21;Michal Kováč;Vývojár;Výskum;4391;Žilina;82;47;749;TRUE;Full-time
+22;Michal Urban;Tester;IT;1794;Martin;13;53;938;TRUE;Freelancer
+23;Eva Varga;Analytik;Financie;2617;Košice;32;89;449;FALSE;Freelancer
+24;Pavol Novák;Vývojár;Marketing;1573;Poprad;73;13;829;FALSE;Part-time
+25;Martin Varga;Projektový manažér;Výskum;3895;Košice;68;84;723;FALSE;Part-time
+26;Eva Szabo;Vývojár;Financie;4640;Nitra;96;90;396;TRUE;Freelancer
+27;Jana Dudáš;Tester;IT;3497;Bratislava;20;16;755;TRUE;Full-time
+28;Mária Szabo;Projektový manažér;IT;3476;Žilina;79;97;778;TRUE;Part-time
+29;Martin Baláž;Tester;Marketing;1308;Nitra;18;66;992;TRUE;Full-time
+30;Martin Novák;Projektový manažér;Výskum;3331;Banská Bystrica;38;85;954;FALSE;Part-time
+31;Pavol Varga;Analytik;Financie;4327;Banská Bystrica;53;60;810;FALSE;Freelancer
+32;Peter Dudáš;Vývojár;IT;2060;Nitra;52;53;344;TRUE;Freelancer
+33;Zuzana Dudáš;Analytik;Marketing;4906;Bratislava;4;5;354;FALSE;Freelancer
+34;Pavol Tóth;Projektový manažér;Financie;1194;Banská Bystrica;40;96;292;TRUE;Freelancer
+35;Eva Dudáš;Tester;Výskum;1326;Poprad;31;62;937;FALSE;Full-time
+36;Jozef Varga;Vývojár;Výskum;2904;Nitra;68;67;683;FALSE;Full-time
+37;Eva Kováč;Projektový manažér;Marketing;1533;Prešov;45;88;844;FALSE;Freelancer
+38;Eva Kováč;Tester;Výskum;3696;Martin;58;23;716;TRUE;Part-time
+39;Martin Horváth;Projektový manažér;Marketing;1677;Banská Bystrica;36;93;548;TRUE;Freelancer
+40;Martin Baláž;Vývojár;Výskum;4947;Poprad;67;47;145;TRUE;Part-time
+41;Zuzana Horváth;Analytik;Marketing;3494;Bratislava;54;89;199;TRUE;Full-time
+42;Eva Kováč;Tester;Výskum;3881;Prešov;67;56;841;FALSE;Full-time
+43;Jozef Baláž;Tester;Marketing;1775;Žilina;75;98;289;FALSE;Part-time
+44;Michal Varga;Projektový manažér;Marketing;4240;Košice;88;60;184;FALSE;Freelancer
+45;Eva Urban;Analytik;Výskum;4349;Bratislava;7;57;261;FALSE;Freelancer
+46;Eva Dudáš;Tester;IT;4105;Žilina;5;57;138;TRUE;Full-time
+47;Peter Horváth;Projektový manažér;IT;2089;Trnava;69;93;115;TRUE;Full-time
+48;Jozef Szabo;Tester;Financie;2141;Banská Bystrica;34;71;104;FALSE;Part-time
+49;Peter Baláž;Vývojár;Financie;4566;Trenčín;10;8;193;FALSE;Part-time
+50;Zuzana Baláž;Tester;Výskum;1373;Trnava;88;92;787;FALSE;Full-time
+51;Martin Horváth;Tester;IT;2762;Banská Bystrica;35;26;911;FALSE;Freelancer
+52;Jana Baláž;Projektový manažér;Marketing;2367;Poprad;78;42;921;FALSE;Freelancer
+53;Mária Szabo;Analytik;Výskum;4013;Banská Bystrica;63;41;842;FALSE;Freelancer
+54;Zuzana Dudáš;Analytik;IT;1015;Martin;30;27;266;TRUE;Freelancer
+55;Zuzana Horváth;Projektový manažér;Marketing;4426;Prešov;1;62;558;FALSE;Full-time
+56;Eva Novák;Vývojár;Výskum;2985;Prešov;98;96;820;TRUE;Freelancer
+57;Jana Baláž;Analytik;IT;3322;Trnava;15;71;121;FALSE;Full-time
+58;Jana Szabo;Tester;Financie;2018;Martin;17;99;592;TRUE;Full-time
+59;Lucia Szabo;Analytik;IT;3811;Košice;90;6;143;TRUE;Freelancer
+60;Lucia Szabo;Vývojár;Marketing;1984;Nitra;93;8;932;FALSE;Full-time
+61;Michal Polák;Vývojár;IT;2673;Banská Bystrica;55;64;172;FALSE;Part-time
+62;Peter Horváth;Vývojár;Výskum;4080;Martin;13;27;809;FALSE;Full-time
+63;Jozef Polák;Vývojár;IT;4435;Banská Bystrica;20;3;363;TRUE;Part-time
+64;Jana Kováč;Analytik;Výskum;4586;Poprad;31;83;895;FALSE;Part-time
+65;Eva Urban;Tester;IT;1125;Prešov;95;40;706;TRUE;Freelancer
+66;Martin Szabo;Analytik;Financie;4073;Banská Bystrica;33;97;158;FALSE;Full-time
+67;Martin Horváth;Vývojár;Financie;4995;Trenčín;40;45;727;TRUE;Freelancer
+68;Mária Urban;Projektový manažér;IT;1070;Banská Bystrica;64;69;837;TRUE;Full-time
+69;Jozef Polák;Projektový manažér;Marketing;1124;Košice;26;94;197;FALSE;Full-time
+70;Martin Dudáš;Analytik;IT;2453;Martin;76;75;559;FALSE;Part-time
+71;Peter Urban;Vývojár;Marketing;2239;Poprad;5;67;630;TRUE;Part-time
+72;Jana Tóth;Tester;Výskum;4143;Martin;61;84;383;FALSE;Freelancer
+73;Martin Novák;Analytik;Marketing;2559;Nitra;42;26;462;FALSE;Full-time
+74;Michal Szabo;Projektový manažér;Financie;4952;Martin;93;19;417;FALSE;Part-time
+75;Lucia Dudáš;Vývojár;IT;1271;Martin;23;30;950;TRUE;Part-time
+76;Zuzana Polák;Vývojár;IT;4944;Banská Bystrica;95;45;421;FALSE;Freelancer
+77;Martin Horváth;Projektový manažér;Financie;4551;Poprad;18;40;440;TRUE;Part-time
+78;Jozef Kováč;Tester;Financie;3342;Nitra;81;86;567;FALSE;Full-time
+79;Michal Polák;Vývojár;Výskum;3114;Bratislava;80;92;731;TRUE;Part-time
+80;Eva Varga;Analytik;Marketing;4583;Banská Bystrica;62;75;522;TRUE;Full-time
+81;Michal Szabo;Tester;Financie;2805;Prešov;8;71;464;TRUE;Full-time
+82;Lucia Dudáš;Analytik;IT;4618;Bratislava;64;76;695;TRUE;Freelancer
+83;Zuzana Tóth;Vývojár;IT;4370;Košice;84;13;595;FALSE;Part-time
+84;Jozef Tóth;Projektový manažér;Marketing;1035;Prešov;44;41;214;FALSE;Full-time
+85;Peter Varga;Vývojár;Výskum;4002;Banská Bystrica;37;2;681;FALSE;Freelancer
+86;Jozef Tóth;Tester;Výskum;3799;Prešov;11;37;745;TRUE;Full-time
+87;Pavol Varga;Vývojár;Marketing;2784;Poprad;36;19;158;TRUE;Full-time
+88;Jozef Szabo;Projektový manažér;Výskum;2167;Martin;58;92;430;FALSE;Part-time
+89;Martin Urban;Vývojár;Marketing;4715;Trnava;92;47;976;FALSE;Part-time
+90;Michal Varga;Tester;Výskum;4103;Bratislava;18;36;360;TRUE;Full-time
+91;Mária Varga;Vývojár;Financie;3302;Martin;5;28;676;FALSE;Part-time
+92;Michal Polák;Analytik;Výskum;4687;Poprad;67;23;961;FALSE;Freelancer
+93;Mária Szabo;Analytik;Marketing;3977;Trenčín;39;46;754;TRUE;Freelancer
+94;Peter Kováč;Analytik;Financie;3986;Banská Bystrica;18;81;784;TRUE;Part-time
+95;Martin Horváth;Projektový manažér;Marketing;1253;Martin;31;24;105;TRUE;Part-time
+96;Zuzana Novák;Tester;IT;3105;Nitra;56;85;823;TRUE;Freelancer
+97;Michal Kováč;Projektový manažér;Marketing;3138;Prešov;99;16;118;TRUE;Freelancer
+98;Peter Kováč;Vývojár;Financie;4005;Trenčín;38;57;574;FALSE;Full-time
+99;Peter Polák;Analytik;Výskum;3348;Banská Bystrica;26;92;520;FALSE;Freelancer
+100;Zuzana Horváth;Vývojár;Marketing;4921;Banská Bystrica;40;6;105;TRUE;Part-time
