@@ -51,20 +51,20 @@ AS SELECT ...
 
 ---
 
-# 🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW
+##  🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW
 
-## 🧩 Kedy použiť TABUĽKU
+### 🧩 Kedy použiť TABUĽKU
 - Potrebovať trvalé uloženie dát
 - Vyžadovať indexy, kľúče a výkonné dopyty
 - Vykonávať zmeny v údajoch (`INSERT`, `UPDATE`, `DELETE`)
 
-## 🧩 Kedy použiť POHĽAD
+### 🧩 Kedy použiť POHĽAD
 - Zjednodušiť zložitý dopyt
 - Obmedziť viditeľnosť stĺpcov alebo riadkov
 - Vytvoriť vrstvu nad databázou pre reporting alebo bezpečnosť
 - Použiť Row-Level Security (RLS) alebo skryť citlivé údaje
 
-## 🧩 Kedy použiť MATERIALIZED VIEW
+###  🧩 Kedy použiť MATERIALIZED VIEW
 ### ✅ Odporúča sa, ak:
 - Potrebovať zrýchliť opakujúce sa zložité dopyty
 - Mať potrebu statického snapshotu dát (napr. denne aktualizovaného)
@@ -79,9 +79,9 @@ REFRESH MATERIALIZED VIEW nazov_view;
 
 ---
 
-# 🧾 Vysvetlenie nastavení pohľadu v pgAdmin (sekcia Definition)
+##🧾 Vysvetlenie nastavení pohľadu v pgAdmin (sekcia Definition)
 
-## 1. **Security barrier?**
+### 1. **Security barrier?**
 - Prepínač zap/vyp
 - Ak je **zapnutý**, PostgreSQL **najprv aplikuje WHERE** v pohľade, a **až potom** spája s dopytom používateľa
 - Chráni pred SQL injection (napr. pri RLS)
@@ -90,7 +90,7 @@ REFRESH MATERIALIZED VIEW nazov_view;
 CREATE VIEW moja_view WITH (security_barrier = true) AS ...;
 ```
 
-## 2. **Security invoker?**
+###  2. **Security invoker?**
 - Ak je **zapnutý**, pohľad sa vykonáva ako **používateľ**, ktorý ho volá
 - Ak je **vypnutý** (default), vykonáva sa ako **vlastník** (definer)
 
@@ -98,7 +98,7 @@ CREATE VIEW moja_view WITH (security_barrier = true) AS ...;
 CREATE VIEW moja_view SECURITY INVOKER AS ...;
 ```
 
-## 3. **Check options**
+### 3. **Check options**
 - Rozbaľovacie menu (CASCADED / LOCAL)
 - Určuje, či INSERT/UPDATE musia **spĺňať podmienky pohľadu**
 
@@ -108,11 +108,11 @@ SELECT * FROM zamestnanci WHERE aktivny = TRUE
 WITH CHECK OPTION;
 ```
 
-## 4. **Chyba 'Name' cannot be empty**
+### 4. **Chyba 'Name' cannot be empty**
 - Znamená, že v sekcii **General** nie je vyplnený **názov pohľadu**
 - Bez toho nie je možné uložiť objekt
 
-## 5. **Ovládacie tlačidlá**
+### 5. **Ovládacie tlačidlá**
 - 🛈 Informácia: pomocník
 - ❓ Help: dokumentácia
 - ❌ Close: zavrie okno
