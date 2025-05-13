@@ -3,10 +3,13 @@
 
 Materiály k online kurzom PostgreSQL so zameraním na VIEW a MATERIALIZED VIEW.
 
-### B1 [👁️ Zoznam VIEW príkazov a odporúčaní](#zoznam-view-prikazov)
+### B1 [👁️ Príkaz VIEW a jeho voľby](#zoznam-view-prikazov)
 ### B2 [🗃️ Porovnanie TABLE vs VIEW vs MATERIALIZED VIEW](#porovnanie-view-materialized)
 ### B3 [🔐 RLS a pohľady: bezpečnostné modely](#rls-a-pohlady)
-
+### B4 [👁️ Výpis všetkých pohľadov v PostgreSQL](#vypis-pohladov)
+### B5 [🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW](#kedy-pouzit-tab-view)
+### B6 [🧾 Nastavenia pohľadu v pgAdmin (Definition)](#nastavenie-view-definition)
+### B7 [🔐 Nastavenia pohľadu v pgAdmin (Security)](#nastavenie-security)
 ---
 
 <a name="zoznam-view-prikazov"></a>
@@ -33,8 +36,8 @@ AS SELECT ...
 
 ---
 
+<a name="vypis-pohladov"></a>
 ## 👁️ Výpis všetkých pohľadov v PostgreSQL
-
 ### 🧩 1. Pomocou SQL dopytu
 
 ```sql
@@ -95,8 +98,8 @@ Používajte SQL dopyt ak ste v GUI alebo inom nástroji než `psql`, inak sú `
 
 ---
 
+<a name="kedy-pouzit-tab-view"></a>
 ## 🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW
-
 ### 🧩 Kedy použiť TABUĽKU
 - Potrebovať trvalé uloženie dát
 - Vyžadovať indexy, kľúče a výkonné dopyty
@@ -123,8 +126,8 @@ REFRESH MATERIALIZED VIEW nazov_view;
 
 ---
 
+<a name="nastavenie-view-definition"></a>
 ## 🧾 Vysvetlenie nastavení pohľadu v pgAdmin (sekcia Definition)
-
 ### 1. **Security barrier?**
 - Prepínač zap/vyp
 - Ak je **zapnutý**, PostgreSQL **najprv aplikuje WHERE** v pohľade, a **až potom** spája s dopytom používateľa
@@ -166,8 +169,8 @@ WITH CHECK OPTION;
 ---
 ![view-pgadmin-1](https://github.com/user-attachments/assets/e2275b55-c342-4ede-82f5-5ab57609db03)
 
+<a name="nastavenie-security"></a>
 ## 🔐 Vysvetlenie nastavení v pgAdmin (sekcia Security)
-
 ### **Privileges (Oprávnenia)**
 - Spravuje prístup k pohľadu
 
