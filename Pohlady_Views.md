@@ -51,7 +51,7 @@ AS SELECT ...
 
 ---
 
-##  🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW
+## 🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW
 
 ### 🧩 Kedy použiť TABUĽKU
 - Potrebovať trvalé uloženie dát
@@ -79,7 +79,7 @@ REFRESH MATERIALIZED VIEW nazov_view;
 
 ---
 
-##🧾 Vysvetlenie nastavení pohľadu v pgAdmin (sekcia Definition)
+## 🧾 Vysvetlenie nastavení pohľadu v pgAdmin (sekcia Definition)
 
 ### 1. **Security barrier?**
 - Prepínač zap/vyp
@@ -122,9 +122,9 @@ WITH CHECK OPTION;
 ---
 ![view-pgadmin-1](https://github.com/user-attachments/assets/e2275b55-c342-4ede-82f5-5ab57609db03)
 
-# 🔐 Vysvetlenie nastavení v pgAdmin (sekcia Security)
+## 🔐 Vysvetlenie nastavení v pgAdmin (sekcia Security)
 
-## **Privileges (Oprávnenia)**
+### **Privileges (Oprávnenia)**
 - Spravuje prístup k pohľadu
 
 | Stĺpec   | Popis                                      |
@@ -137,7 +137,7 @@ WITH CHECK OPTION;
 GRANT SELECT ON VIEW bezpecne_udaje TO reporting_users;
 ```
 
-## **Security labels**
+### **Security labels**
 - Použitie MAC/SELinux bezpečnostných značiek (napr. `sepgsql`)
 
 ```sql
