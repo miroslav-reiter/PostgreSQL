@@ -16,6 +16,13 @@ WHERE table_schema NOT IN ('pg_catalog', 'information_schema');
 
 Môžete doplniť filter napr. `WHERE table_schema = 'public'`.
 
+🧠 **Vysvetlenie:**  
+- `information_schema.views` je systémový pohľad obsahujúci zoznam všetkých definovaných SQL pohľadov.  
+- `table_schema` označuje názov schémy, napr. `public`.  
+- `table_name` obsahuje názov konkrétneho pohľadu.  
+- Podmienka `NOT IN (...)` filtruje systémové schémy, ktoré nechceme zobrazovať.  
+- Možno pridať `WHERE table_schema = 'public'` pre výpis len vlastných pohľadov.
+
 ---
 
 📌 **Úloha 2: Výpis všetkých pohľadov pomocou metapríkazu v `psql`**  
@@ -24,6 +31,9 @@ Zobrazí všetky pohľady v aktuálnej schéme.
 ```psql
 \dv
 ```
+🧠 **Vysvetlenie:**  
+- `\dv` je metapríkaz nástroja `psql`, ktorý zobrazí zoznam všetkých pohľadov v aktuálne zvolenej databáze a schéme.  
+- Rýchly spôsob kontroly, aké pohľady existujú, bez potreby SQL.
 
 ---
 
@@ -36,6 +46,11 @@ SELECT meno, priezvisko, oddelenie
 FROM zamestnanci
 WHERE aktivny = TRUE;
 ```
+
+🧠 **Vysvetlenie:**  
+- `CREATE VIEW` definuje nový pohľad v databáze, ktorý sa správa ako "virtuálna tabuľka".  
+- Tento pohľad vracia len stĺpce `meno`, `priezvisko`, `oddelenie`.  
+- `WHERE aktivny = TRUE` zabezpečí, že vo výsledku budú len zamestnanci, ktorí sú aktuálne aktívni.
 
 ---
 
@@ -50,6 +65,12 @@ JOIN oddelenia o ON z.oddelenie_id = o.id
 WHERE o.nazov = 'IT';
 ```
 
+🧠 **Vysvetlenie:**  
+- V tomto prípade používame `JOIN` medzi tabuľkami `zamestnanci` a `oddelenia`.  
+- Spojenie je cez cudzie kľúče: `z.oddelenie_id = o.id`.  
+- Podmienka `WHERE o.nazov = 'IT'` zabezpečí, že sa zobrazia len zamestnanci pracujúci v oddelení "IT".  
+- Výsledkom je pohľad s menom, priezviskom a e-mailom zamestnancov IT oddelenia.
+
 ---
 
 📌 **Úloha 5: Zobraziť údaje z pohľadu `zamestnanci_it`**  
@@ -59,6 +80,10 @@ Zobrazí všetkých IT zamestnancov s firemnými emailmi.
 SELECT * FROM zamestnanci_it
 WHERE email LIKE '%@firma.sk';
 ```
+🧠 **Vysvetlenie:**
+- Tento SQL dopyt vyberá všetky stĺpce z pohľadu zamestnanci_it, ktorý obsahuje len zamestnancov z IT oddelenia.
+- Príkaz LIKE '%@firma.sk' zabezpečí, že sa vyfiltrujú len tí zamestnanci, ktorých e-mailová adresa končí na @firma.sk.
+
 
 ---
 
@@ -73,6 +98,11 @@ JOIN oddelenia o ON z.oddelenie_id = o.id
 JOIN platy p ON z.id = p.zamestnanec_id;
 ```
 
+🧠 **Vysvetlenie:**
+- Tento pohľad spája 3 tabuľky: zamestnanci, oddelenia a platy.
+- Pomocou JOIN sa pripoja údaje o zamestnancoch, ich oddeleniach a výške platu.
+- Použitie aliasov (z, o, p) zjednodušuje zápis. Stĺpec o.nazov AS oddelenie priraďuje alias názvu oddelenia.
+
 ---
 
 📌 **Úloha 7: Reštriktívny pohľad**  
@@ -84,6 +114,10 @@ SELECT meno, priezvisko
 FROM zamestnanci 
 WHERE zobrazit = TRUE;
 ```
+
+🧠 **Vysvetlenie:**
+- Tento pohľad obmedzuje výstup len na stĺpce meno a priezvisko.
+- Podmienka WHERE zobrazit = TRUE zabezpečí, že sa zobrazia len zamestnanci, ktorí majú povolené byť zobrazení (napr. na webe alebo v reportoch).
 
 ---
 
@@ -97,6 +131,10 @@ FROM zamestnanci
 WHERE aktivny = TRUE;
 ```
 
+🧠 **Vysvetlenie:**
+- CREATE OR REPLACE VIEW aktualizuje existujúci pohľad bez nutnosti ho najprv zrušiť.
+- Pridávame nový stĺpec email do výstupu a zároveň zachovávame filtrovanie len na aktívnych zamestnancov pomocou WHERE aktivny = TRUE.
+
 ---
 
 📌 **Úloha 9: Zrušenie pohľadu**  
@@ -105,6 +143,10 @@ Odstránenie pohľadu s kontrolou existencie.
 ```sql
 DROP VIEW IF EXISTS zamestnanci_info;
 ```
+
+**🧠 Vysvetlenie:**
+- Príkaz DROP VIEW odstráni pohľad z databázy.
+- Pridaním IF EXISTS zabezpečíme, že nevznikne chyba, ak pohľad neexistuje – v takom prípade sa príkaz jednoducho neuskutoční.
 
 ---
 
