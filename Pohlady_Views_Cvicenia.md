@@ -1,5 +1,5 @@
 
-# 👁️ PostgreSQL Pohľady: Praktické Úlohy a Skripty
+# 🐘👁️ PostgreSQL Pohľady (Views): Praktické Úlohy a Skripty
 
 Praktický sprievodca pre prácu s pohľadmi v PostgreSQL. Vhodné na výučbu, testovanie a projekty.
 
