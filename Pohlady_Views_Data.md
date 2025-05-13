@@ -1,4 +1,4 @@
-# 📘 PostgreSQL: Kompletný SQL setup – Zamestnanci, Oddelenia, Platy, RLS
+# 📘 PostgreSQL Dáta pre Cvičenia Pohľady (Views)
 
 Tento dokument obsahuje všetky základné skripty na vytvorenie schémy zamestnaneckej databázy, jej naplnenie dátami, bezpečnostné pohľady a politiky RLS. Každý skript je pripravený na okamžité spustenie.
 
