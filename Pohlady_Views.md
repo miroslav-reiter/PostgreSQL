@@ -49,6 +49,107 @@ AS SELECT ...
 
 ---
 
+
+# 🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW
+
+## 🧩 Kedy použiť TABUĽKU
+- Potrebovať trvalé uloženie dát
+- Vyžadovať indexy, kľúče a výkonné dopyty
+- Vykonávať zmeny v údajoch (`INSERT`, `UPDATE`, `DELETE`)
+
+## 🧩 Kedy použiť POHĽAD
+- Zjednodušiť zložitý dopyt
+- Obmedziť viditeľnosť stĺpcov alebo riadkov
+- Vytvoriť vrstvu nad databázou pre reporting alebo bezpečnosť
+- Použiť Row-Level Security (RLS) alebo skryť citlivé údaje
+
+## 🧩 Kedy použiť MATERIALIZED VIEW
+### ✅ Odporúča sa, ak:
+- Potrebovať zrýchliť opakujúce sa zložité dopyty
+- Mať potrebu statického snapshotu dát (napr. denne aktualizovaného)
+- Použiť na dashboardy, reporty, analytické prehľady
+
+### ⚠️ Pozor:
+- Dáta sa **neaktualizujú automaticky** – treba ručne alebo pomocou `cron`/`job`:
+
+```sql
+REFRESH MATERIALIZED VIEW nazov_view;
+```
+
+---
+
+# 🧾 Vysvetlenie nastavení pohľadu v pgAdmin (sekcia Definition)
+
+## 1. **Security barrier?**
+- Prepínač zap/vyp
+- Ak je **zapnutý**, PostgreSQL **najprv aplikuje WHERE** v pohľade, a **až potom** spája s dopytom používateľa
+- Chráni pred SQL injection (napr. pri RLS)
+
+```sql
+CREATE VIEW moja_view WITH (security_barrier = true) AS ...;
+```
+
+## 2. **Security invoker?**
+- Ak je **zapnutý**, pohľad sa vykonáva ako **používateľ**, ktorý ho volá
+- Ak je **vypnutý** (default), vykonáva sa ako **vlastník** (definer)
+
+```sql
+CREATE VIEW moja_view SECURITY INVOKER AS ...;
+```
+
+## 3. **Check options**
+- Rozbaľovacie menu (CASCADED / LOCAL)
+- Určuje, či INSERT/UPDATE musia **spĺňať podmienky pohľadu**
+
+```sql
+CREATE VIEW aktivni_zamestnanci AS
+SELECT * FROM zamestnanci WHERE aktivny = TRUE
+WITH CHECK OPTION;
+```
+
+## 4. **Chyba 'Name' cannot be empty**
+- Znamená, že v sekcii **General** nie je vyplnený **názov pohľadu**
+- Bez toho nie je možné uložiť objekt
+
+## 5. **Ovládacie tlačidlá**
+- 🛈 Informácia: pomocník
+- ❓ Help: dokumentácia
+- ❌ Close: zavrie okno
+- 🔄 Reset: vymaže zmeny
+- 💾 Save: uloží definíciu (len ak je vyplnený "Name")
+
+---
+![view-pgadmin-1](https://github.com/user-attachments/assets/e2275b55-c342-4ede-82f5-5ab57609db03)
+
+# 🔐 Vysvetlenie nastavení v pgAdmin (sekcia Security)
+
+## **Privileges (Oprávnenia)**
+- Spravuje prístup k pohľadu
+
+| Stĺpec   | Popis                                      |
+|-----------|---------------------------------------------|
+| Grantee   | Kto získa oprávnenie (napr. `reporting_users`) |
+| Privilege | SELECT, INSERT, UPDATE, DELETE              |
+| Grantor   | Vlastník pohľadu                         |
+
+```sql
+GRANT SELECT ON VIEW bezpecne_udaje TO reporting_users;
+```
+
+## **Security labels**
+- Použitie MAC/SELinux bezpečnostných značiek (napr. `sepgsql`)
+
+```sql
+SECURITY LABEL FOR sepgsql ON VIEW moja_view IS 'system_u:object_r:sepgsql_view_t:s0';
+```
+
+➡️ Bez MAC rozšírenia sa táto sekcia nevyužije
+
+## **Chyba 'Name' cannot be empty**
+- Potrebné vyplniť názov pohľadu v sekcii **General**
+
+![view-pgadmin-2](https://github.com/user-attachments/assets/20be8e43-e7d1-420e-bfe2-e884286c4926)
+
 <a name="rls-a-pohlady"></a>
 ## 🔐 RLS a pohľady: bezpečnostné modely
 
