@@ -33,6 +33,50 @@ AS SELECT ...
 
 ---
 
+## 👁️ Výpis všetkých pohľadov v PostgreSQL
+
+### 🧩 1. Pomocou SQL dopytu
+
+```sql
+SELECT table_schema, table_name
+FROM information_schema.views
+WHERE table_schema NOT IN ('pg_catalog', 'information_schema');
+```
+
+#### 📝 Vysvetlenie:
+- `table_schema` – názov schémy (napr. `public`)
+- `table_name` – názov pohľadu
+- Filtrujeme systémové schémy
+
+---
+
+### 🧩 2. Pomocou metapríkazov v `psql`
+
+```psql
+\dV
+```
+
+### 📝 Alternatívy:
+- `\dv` – zobrazí zoznam pohľadov
+- `\d+ nazov_pohladu` – detailný popis konkrétneho pohľadu
+
+---
+
+### ✅ Súhrnná tabuľka metapríkazov pre pohľady
+
+| Príkaz          | Popis                                                  |
+|------------------|-----------------------------------------------------------|
+| `\dv`            | Zobrazí všetky pohľady v aktuálnej schéme                |
+| `\dV`            | Zobrazí všetky pohľady vo všetkých schémach              |
+| `\d+ nazov`      | Detailná štruktúra konkrétneho pohľadu                   |
+| `\d`             | Zoznam všetkých objektov vrátane pohľadov                |
+
+---
+
+### 📚 Odporúčanie
+
+Používajte SQL dopyt ak ste v GUI alebo inom nástroji než `psql`, inak sú `psql` metapríkazy rýchle a praktické pri práci z terminálu.
+
 <a name="porovnanie-view-materialized"></a>
 ## 🗃️ Porovnanie: `TABLE` vs `VIEW` vs `MATERIALIZED VIEW`
 
