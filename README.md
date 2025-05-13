@@ -8,7 +8,7 @@ Materiály k online kurzom PostgreSQL
 ### A5 [🐧 Inštalácia Linux pgAdmin](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#instalacia-linux-pgadmin)
 
 <a name="zoznam-meta-prikazov"></a>  
-# 🤖 Zoznam Metapríkazov PostgreSQL s vysvetleniami
+## 🤖 Zoznam Metapríkazov PostgreSQL s vysvetleniami
 | N  |   Metapríkaz  |                                    Popis                                   |
 |----|:-------------:|:--------------------------------------------------------------------------:|
 | 1  | **\l**            | Zobrazenie zoznamu všetkých databáz.                                       |
