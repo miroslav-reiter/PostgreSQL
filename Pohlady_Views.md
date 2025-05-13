@@ -10,7 +10,7 @@ Materiály k online kurzom PostgreSQL so zameraním na VIEW a MATERIALIZED VIEW.
 ---
 
 <a name="zoznam-view-prikazov"></a>
-## 👁️ Zoznam VIEW príkazov a odporúčaní
+## 👁️ Príkaz VIEW a jeho voľby
 
 ```sql
 CREATE [ OR REPLACE ] [ TEMP | TEMPORARY ] [ RECURSIVE ] VIEW nazov_view [ ( stlpec1, stlpec2, ... ) ]
@@ -28,6 +28,8 @@ AS SELECT ...
 | `RECURSIVE`               | Povolenie rekurzívnych pohľadov (od v14+)                                |
 | `WITH (security_barrier)` | Zvýšená bezpečnosť proti SQL injection                          |
 | `CHECK OPTION`            | Obmedzenie INSERT/UPDATE len na riadky, ktoré vyhovujú podmienke pohľadu   |
+
+📑 [Dokumentácia View PostgreSQL](https://www.postgresql.org/docs/current/sql-createview.html )
 
 ---
 
@@ -48,7 +50,6 @@ AS SELECT ...
 | **Automatická aktualizácia**| ✅ Áno                                          | ✅ Áno – vždy pri SELECT                                   | ❌ Nie – treba `REFRESH` ručne alebo cez cron/job             |
 
 ---
-
 
 # 🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW
 
