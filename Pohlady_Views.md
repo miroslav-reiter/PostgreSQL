@@ -1,15 +1,14 @@
-
-# 📘 PostgreSQL: Pohľady a Materiálové pohľady
+# 🐘📘 PostgreSQL: Pohľady a Materiálové pohľady
 
 Materiály k online kurzom PostgreSQL so zameraním na VIEW a MATERIALIZED VIEW.
 
 ### B1 [👁️ Príkaz VIEW a jeho voľby](#zoznam-view-prikazov)
 ### B2 [🗃️ Porovnanie TABLE vs VIEW vs MATERIALIZED VIEW](#porovnanie-view-materialized)
-### B3 [🔐 RLS a pohľady: bezpečnostné modely](#rls-a-pohlady)
-### B4 [👁️ Výpis všetkých pohľadov v PostgreSQL](#vypis-pohladov)
-### B5 [🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW](#kedy-pouzit-tab-view)
-### B6 [🧾 Nastavenia pohľadu v pgAdmin (Definition)](#nastavenie-view-definition)
-### B7 [🔐 Nastavenia pohľadu v pgAdmin (Security)](#nastavenie-security)
+### B3 [👁️ Výpis všetkých pohľadov v PostgreSQL](#vypis-pohladov)
+### B4 [🧩 Kedy použiť TABLE, VIEW a MATERIALIZED VIEW](#kedy-pouzit-tab-view)
+### B5 [🧾 Nastavenia pohľadu v pgAdmin (Definition)](#nastavenie-view-definition)
+### B6 [🔐 Nastavenia pohľadu v pgAdmin (Security)](#nastavenie-security)
+### B7 [🔐 RLS a pohľady: bezpečnostné modely](#rls-a-pohlady)
 ---
 
 <a name="zoznam-view-prikazov"></a>
