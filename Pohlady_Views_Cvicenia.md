@@ -166,7 +166,13 @@ CREATE OR REPLACE RECURSIVE VIEW hierarchia_zamestnancov(id, meno, nadriadeny_id
   JOIN hierarchia_zamestnancov h ON z.nadriadeny_id = h.id
 );
 ```
+🧠 **Vysvetlenie**:
+- Tento rekurzívny pohľad vytvára hierarchiu zamestnancov podľa nadriadeného.
+- Prvá časť SELECT ... WHERE nadriadeny_id IS NULL vyberie všetkých vrcholových zamestnancov.
+- UNION ALL rekurzívne pridáva podriadených zamestnancov k ich nadriadeným.
+- Stĺpec uroven označuje úroveň v hierarchii (1 = najvyššia).
 
+RECURSIVE VIEW vyžaduje PostgreSQL verziu 14+.
 ---
 
 📌 **Úloha 11: Aktualizovateľné pohľady**  
@@ -183,6 +189,12 @@ SET email = 'novy@email.sk'
 WHERE id = 123;
 ```
 
+🧠 **Vysvetlenie:**
+- Tento pohľad obsahuje len aktívnych zamestnancov.
+- Keďže výber je jednoduchý (žiadne JOIN, funkcie ani agregácie), PostgreSQL umožňuje pohľad aktualizovať.
+- Príkaz UPDATE mení hodnotu stĺpca email pre zamestnanca s id = 123.
+- Pohľad smeruje zmenu priamo do podkladovej tabuľky zamestnanci.
+
 ---
 
 📌 **Úloha 12: Pohľady s kontrolou prístupu**  
@@ -196,5 +208,9 @@ FROM zamestnanci;
 REVOKE ALL ON zamestnanci FROM PUBLIC;
 GRANT SELECT ON bezpecne_udaje TO reporting_users;
 ```
-
+🧠 **Vysvetlenie:**
+- Pohľad bezpecne_udaje zobrazuje iba vybrané stĺpce zo zamestnancov (bez e-mailu, mzdy atď.).
+- REVOKE ALL odoberie všetky práva zo základnej tabuľky pre verejnosť (neautorizovaní používatelia).
+- GRANT SELECT pridelí prístup len na pohľad, čím sa zabezpečí kontrolovaný prístup.
+- Toto je bežný spôsob, ako pomocou pohľadu vytvoriť „bezpečnostnú vrstvu“ v databáze.
 ---
