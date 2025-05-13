@@ -22,6 +22,8 @@ INSERT INTO oddelenia (id, nazov, mesto) VALUES
 ```
 
 📌 **Úloha: Vytvoriť tabuľku `zamestnanci` s referenciou na `oddelenia`**
+- oddelenie_id – pre cudzí kľúč do tabuľky oddelenia
+- oddelenia – pre redundantný textový názov oddelenia (napr. pre reporting, pohodlný SELECT)
 ```sql
 DROP TABLE IF EXISTS zamestnanci;
 CREATE TABLE IF NOT EXISTS zamestnanci (
