@@ -18,7 +18,7 @@ Materiály k online kurzom PostgreSQL
 | 5  |**\dn**          | Zobrazenie zoznamu schém v aktuálnej databáze.                             |
 | 6  | **\di**          | Zobrazenie zoznamu indexov v aktuálnej schéme.                             |
 | 7  |**\dv**          | Zobrazenie zoznamu pohľadov (views) v aktuálnej schéme.                    |
-| 8  | **\du**          | Zobrazenie zoznamu užívateľov a ich rolí.                                  |
+| 8  | **\du**          | Zobrazenie zoznamu používateľov a ich rolí.                                  |
 | 9  | **\df**          | Zobrazenie zoznamu funkcií definovaných v databáze.                        |
 | 10 | **\pset**        | Nastavenie formátovania výstupu (napr. \pset border 2 pridá orámovanie).   |
 | 11 | **\q**            | Ukončenie relácie psql (vystúpenie z PostgreSQL interaktívneho terminálu). |
