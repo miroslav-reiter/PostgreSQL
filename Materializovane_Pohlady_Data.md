@@ -155,6 +155,8 @@ CREATE TABLE produkty (
 
 
 ```sql
+INSERT INTO produkty (produkt_id, nazov, kategoria, cena)
+VALUES
 (1, 'Kurz Python Začiatočník', 'Programovanie', 150.0),
 (2, 'Kurz Java Mierne Pokročilý', 'Programovanie', 180.0),
 (3, 'Excel pre účtovníkov', 'Office a Financie', 120.0),
