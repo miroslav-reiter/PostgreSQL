@@ -153,6 +153,30 @@ CREATE TABLE produkty (
 );
 ```
 
+
+```sql
+(1, 'Kurz Python Začiatočník', 'Programovanie', 150.0),
+(2, 'Kurz Java Mierne Pokročilý', 'Programovanie', 180.0),
+(3, 'Excel pre účtovníkov', 'Office a Financie', 120.0),
+(4, 'Marketing na sociálnych sieťach', 'Marketing', 140.0),
+(5, 'Kurz SQL a databázy', 'Dáta', 130.0),
+(6, 'Adobe Photoshop Základy', 'Grafika', 160.0),
+(7, 'Kurz Projektového Riadenia', 'Manažment', 200.0),
+(8, 'Finančná gramotnosť', 'Financie', 110.0),
+(9, 'WordPress Tvorba Webu', 'Webdizajn', 170.0),
+(10, 'Kurz Power BI', 'Dáta', 190.0),
+(11, 'UI/UX Dizajn pre začiatočníkov', 'Dizajn', 175.0),
+(12, 'Kurz Git a GitHub', 'DevOps', 125.0),
+(13, 'Štatistika v R', 'Dáta', 160.0),
+(14, 'Kurz Canva pre začiatočníkov', 'Grafika', 100.0),
+(15, 'Agile a Scrum základy', 'Manažment', 135.0),
+(16, 'Kurz Linux základy', 'Systémová administrácia', 145.0),
+(17, 'Copywriting pre web', 'Marketing', 115.0),
+(18, 'Kurz PowerPoint', 'Office', 95.0),
+(19, 'Python pre Data Science', 'Dáta', 220.0),
+(20, 'Kurz Etického Hacking', 'Bezpečnosť', 250.0);
+```
+
 ---
 
 📌 **Úloha: Naplniť tabuľku `produkty` reálnymi kurzami**  
