@@ -3,7 +3,7 @@ Materiály k online kurzom PostgreSQL
 
 01. [**🤖 Zoznam Metapríkazov PostgreSQL**](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-meta-prikazov)
 02. [**🛠️ Zoznam základných PostgreSQL príkazov**](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-zakladnych-prikazov-postgresql)
-03. [**👮 Zoznam PostgreSQL DBA príkazov - Používatelia a Práva **](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-prikazov-dba-pouzivatelia)
+03. [**👮 Zoznam PostgreSQL DBA príkazov - Používatelia a Práva**](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#zoznam-prikazov-dba-pouzivatelia)
 04. [**⭐ Prehľad PostgreSQL privilégia používateľov**](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#privilegia-postgresql)
 05. [**🐧 Inštalácia Linux pgAdmin**](https://github.com/miroslav-reiter/PostgreSQL/blob/main/README.md#instalacia-linux-pgadmin)
 
